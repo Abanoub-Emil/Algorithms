@@ -36,7 +36,6 @@
 		F66D564926E2E02300FE525E /* JumpingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D564826E2E02300FE525E /* JumpingStairs.swift */; };
 		F66D564B26E2E4E500FE525E /* SubstringOfDistinctChar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D564A26E2E4E500FE525E /* SubstringOfDistinctChar.swift */; };
 		F6A4B02127D270BE002DC781 /* ChampagneTower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4B02027D270BE002DC781 /* ChampagneTower.swift */; };
-		F6A4B02327D2924C002DC781 /* Add2ReveresedLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4B02227D2924C002DC781 /* Add2ReveresedLinkedList.swift */; };
 		F6EA28E226EBD08D00321EEC /* MaxOf3InArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA28E126EBD08D00321EEC /* MaxOf3InArray.swift */; };
 		F6F3FD8F26F0FD6C00557DC1 /* ClassroomOverlapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3FD8E26F0FD6C00557DC1 /* ClassroomOverlapping.swift */; };
 		F6F3FD9126F11A7800557DC1 /* SentenceReconstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3FD9026F11A7800557DC1 /* SentenceReconstruction.swift */; };
@@ -86,7 +85,6 @@
 		F66D564826E2E02300FE525E /* JumpingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingStairs.swift; sourceTree = "<group>"; };
 		F66D564A26E2E4E500FE525E /* SubstringOfDistinctChar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringOfDistinctChar.swift; sourceTree = "<group>"; };
 		F6A4B02027D270BE002DC781 /* ChampagneTower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampagneTower.swift; sourceTree = "<group>"; };
-		F6A4B02227D2924C002DC781 /* Add2ReveresedLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add2ReveresedLinkedList.swift; sourceTree = "<group>"; };
 		F6EA28E126EBD08D00321EEC /* MaxOf3InArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxOf3InArray.swift; sourceTree = "<group>"; };
 		F6F3FD8E26F0FD6C00557DC1 /* ClassroomOverlapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomOverlapping.swift; sourceTree = "<group>"; };
 		F6F3FD9026F11A7800557DC1 /* SentenceReconstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceReconstruction.swift; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				F66D564226E2D33200FE525E /* Collection+Extension.swift */,
 				F66D563926E273E000FE525E /* Algorithms */,
 				F66D563226E273B500FE525E /* main.swift */,
-				F6A4B02227D2924C002DC781 /* Add2ReveresedLinkedList.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -257,7 +254,6 @@
 				F614A24127A8661B00133DEA /* ReverseLinkedList.swift in Sources */,
 				F66D564126E2A7FC00FE525E /* msgDecoder.swift in Sources */,
 				F66D563326E273B500FE525E /* main.swift in Sources */,
-				F6A4B02327D2924C002DC781 /* Add2ReveresedLinkedList.swift in Sources */,
 				F66D564926E2E02300FE525E /* JumpingStairs.swift in Sources */,
 				F6A4B02127D270BE002DC781 /* ChampagneTower.swift in Sources */,
 				F614A24327A86CBA00133DEA /* SubLinkedListSearch.swift in Sources */,
