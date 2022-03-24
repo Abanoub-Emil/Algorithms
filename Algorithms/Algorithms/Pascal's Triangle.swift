@@ -14,16 +14,11 @@ class PascalsTraingle {
     
     func solution() {
         
-        recursion(rowNumber: numOfRows)
-        
-        print(pascalTriangle)
-    }
-    
-    func recursion(rowNumber: Int) -> [Int] {
-        if pascalTriangle.count - 1 >= rowNumber {
-            return pascalTriangle[rowNumber]
+        if pascalTriangle.count - 1 >= numOfRows {
+            print(pascalTriangle)
+            return
         } else {
-            for count in pascalTriangle.count...rowNumber {
+            for count in pascalTriangle.count...numOfRows {
                 if pascalTriangle.count == count {
                     let lastRow = pascalTriangle.last ?? []
                     var arr = [Int](repeating: 1, count: count)
@@ -34,7 +29,8 @@ class PascalsTraingle {
                 }
             }
         }
-        return []
+        print(pascalTriangle)
     }
+ 
     
 }

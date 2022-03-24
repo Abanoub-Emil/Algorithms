@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import SwiftUI
 //  There exists a staircase with N steps, and you can climb up either 1 or 2 steps at a time. Given N, write a function that returns the number of unique ways you can climb the staircase. The order of the steps matters.
 //
 //  For example, if N is 4, then there are 5 unique ways:
@@ -25,7 +25,7 @@ struct JumpingStairs {
     
     func solution() -> Int {
         
-        var storedResults = [Int](repeating: -1, count: numOfSteps + 1) // 7 refers to (numOfSteps + 1)
+        var storedResults = [Int](repeating: -1, count: numOfSteps + 1)
         return recursiveSolution(numOfStairs: numOfSteps, memo: &storedResults)
     }
     
@@ -46,4 +46,6 @@ struct JumpingStairs {
         memo[numOfStairs] = result
         return result
     }
+    
+    
 }

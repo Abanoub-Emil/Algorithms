@@ -23,7 +23,7 @@ import Foundation
 struct MaxOf3InArray {
     
     let arr = [10, 5, 2, 7, 8, 7]
-    let k = 1
+    let k = 3
     
     func solution() {
         for i in 0...arr.count-k {

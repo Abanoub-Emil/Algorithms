@@ -25,31 +25,29 @@ struct msgDecoder {
     
     let msg = "1213151"
     let asqw = "129129129129129"
-//    1,2,9,1,2,9,1,2,9,1,2,9,1,2  -- 12,9,1,2,9,1,2,9,1,2  --  1,2,9,12,9,1,2,9,1,2 -- 2 more   16 cases
-//  1 - 5 - 10 - 10 - 5 - 1
-//  1 - 4 - 6 - 4 - 1
-//  1 - 3 - 3 - 1
-//    a
-//    1,2,1,3,1,5,1  --  12,1,3,1,5,1  --  1,21,3,1,5,1  --  1,2,13,1,5,1  --  1,2,1,3,15,1
-//    12,13,1,5,1   --  12,1,3,15,1  --  1,2,13,15,1  --  1,21,3,15,1
-//    12,13,15,1
+    //    1,2,9,1,2,9,1,2,9,1,2,9,1,2  -- 12,9,1,2,9,1,2,9,1,2  --  1,2,9,12,9,1,2,9,1,2 -- 2 more   16 cases
+    //  1 - 5 - 10 - 10 - 5 - 1
+    //  1 - 4 - 6 - 4 - 1
+    //  1 - 3 - 3 - 1
+    //    a
+    //    1,2,1,3,1,5,1  --  12,1,3,1,5,1  --  1,21,3,1,5,1  --  1,2,13,1,5,1  --  1,2,1,3,15,1
+    //    12,13,1,5,1   --  12,1,3,15,1  --  1,2,13,15,1  --  1,21,3,15,1
+    //    12,13,15,1
     func solution() -> Int {
-//        let arr = Array(self.msg)
-//        var mixedChars = 0
-//        for index in 0..<arr.count-1 {
-//
-//                if (Int(String(arr[index]) + String(arr[index+1])) ?? 0) < 27 {
-//                    mixedChars += 1
-//                }
-//
-//        }
+        //        let arr = Array(self.msg)
+        //        var mixedChars = 0
+        //        for index in 0..<arr.count-1 {
+        //
+        //                if (Int(String(arr[index]) + String(arr[index+1])) ?? 0) < 27 {
+        //                    mixedChars += 1
+        //                }
+        //
+        //        }
         var memo = [Int](repeating: -1, count: asqw.count + 1)
         return helper(msg: asqw, length: asqw.count, memo: &memo)
     }
     
     func helper(msg: String, length: Int, memo: inout [Int]) -> Int {
-        let arr = Array(msg)
-        let currentChar = msg.count - length
         
         if length == 0 { return 1}
         if msg.first == "0" { return 0 }
@@ -60,7 +58,9 @@ struct msgDecoder {
         
         var result = helper(msg: msg, length: length - 1, memo: &memo)
         
-//        let doubleCharsToInt =
+        let arr = Array(msg)
+        let currentChar = msg.count - length
+        
         if length >= 2 && (Int(String(arr[currentChar]) + String(arr[currentChar+1])) ?? 0) < 27 {
             result += helper(msg: msg, length: length - 2, memo: &memo)
         }

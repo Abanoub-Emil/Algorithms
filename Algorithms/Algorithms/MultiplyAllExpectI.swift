@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  MultiplyAllExpectI.swift
 //  Algorithms
 //
 //  Created by Abanoub Emil on 03/09/2021.
@@ -17,13 +17,35 @@ import Foundation
 
 struct MultiplyAllExpectI {
     
-    let arr = [1, 3, 5, 7, 9, 6, 4, 8]
+    let arr = [1, 2, 3, 4, 5]
     
     func solution() -> [Int] {
-        let multiplingResult = 1
+        var multiplingResult = 1
+        var newArr = [Int]()
         for num in arr {
             multiplingResult *= num
         }
+        for num in arr {
+            newArr.append(multiplingResult/num)
+        }
+        return newArr
+    }
+    
+    
+    // MARK: Without division
+    
+    func solution2() -> [Int] {
+        var newArr = [Int]()
+        var multiplication = 1
         
+        for i in 0..<arr.count {
+            for index in 0..<arr.count {
+                if index == i { continue }
+                multiplication *= arr[index]
+            }
+            newArr.append(multiplication)
+            multiplication = 1
+        }
+        return newArr
     }
 }

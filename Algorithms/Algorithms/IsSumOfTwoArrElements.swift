@@ -1,5 +1,5 @@
 //
-//  SDASD.swift
+//  IsSumOfTwoArrElements.swift
 //  Algorithms
 //
 //  Created by Abanoub Emil on 03/09/2021.
@@ -15,6 +15,19 @@ import Foundation
 //
 //  Bonus: Can you do this in one pass?
 
-struct  {
-    <#fields#>
+struct IsSumOfTwoArrElements {
+    let arr = [10, 15, 3, 6, 32, 12, 3, 4, 1, 2]
+    let k = 17
+    
+    func solution() -> Bool {
+        var setOfEligibleNumber = Set<Int>()
+        for num in arr {
+            if setOfEligibleNumber.contains(num) {
+                return true
+            } else {
+                setOfEligibleNumber.insert(k - num)
+            }
+        }
+        return false
+    }
 }
